@@ -20,5 +20,5 @@ print(type(height))
 
 # boolean
 human = True
-print(human)
+print(f'Are you a human? {human}')
 print(type(human))
