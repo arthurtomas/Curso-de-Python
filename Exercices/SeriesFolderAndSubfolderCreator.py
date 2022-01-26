@@ -5,6 +5,10 @@ m_folder = input("Series name: ")
 num_sub_folders = int(input("Number of Seasons: "))
 
 
+def delete_folder(directory):
+    print("")
+
+
 def create_folder(directory):              # Function responsible to create folders
     try:
         if not os.path.exists(directory):
