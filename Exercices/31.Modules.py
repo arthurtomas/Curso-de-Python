@@ -1,4 +1,4 @@
-import messages
+import messages as m
 
-messages.hello()
-messages.bye()
+m.hello()
+m.bye()
