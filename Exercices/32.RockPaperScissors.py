@@ -2,8 +2,8 @@ import random
 import messages
 import os
 
-while True:
 
+def new_game():
     choices = ["rock", "paper", "scissors"]
     computer = random.choice(choices)
     player = None
@@ -43,8 +43,22 @@ while True:
             print(f"Player: {player}")
             print("You win!")
 
-    play_again = input("Would you like to play again? (Y/N): ").lower()
-    if play_again != "y":
-        break
+
+def play_again():
+    response = input("Would you like to play again? (Y/N): ").lower()
+    if response == "y":
+        return True
+    elif response == "n":
+        return False
+    else:
+        print("Enter a valid answer")
+        play_again()
+
+
+new_game()
+
+while play_again():
+    new_game()
+
 
 messages.bye()
