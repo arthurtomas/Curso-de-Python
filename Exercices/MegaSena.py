@@ -3,6 +3,7 @@ import random
 complete_bet = []
 count = 0
 
+
 def aposta():
     for i in range(0, 4):
         bet = int(input(f"Digite o {i+1}° número da sua aposta: "))
@@ -12,7 +13,8 @@ def aposta():
 
 
 def resultado():
-    result = [random.randint(1, 60) for i in range(4)]
+    result = []
+    result = random.sample(range(1, 61), 4)
     result.sort()
     return result
 
