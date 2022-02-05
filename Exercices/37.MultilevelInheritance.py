@@ -19,4 +19,3 @@ dog = Dog()
 print(dog.alive)
 dog.eat()
 dog.bark()
-cdpy    
